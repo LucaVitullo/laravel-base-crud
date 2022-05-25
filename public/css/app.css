@@ -1,0 +1,9 @@
+.contents {
+  padding: 30px;
+}
+
+.contents .card {
+  width: 200px;
+  margin: 15px;
+}
+
