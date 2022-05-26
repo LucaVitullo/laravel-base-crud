@@ -1,4 +1,7 @@
 <div class="description">
+    <h2>
+        Descrizione:
+    </h2>
     {{ $comic->description }}
 </div>
 

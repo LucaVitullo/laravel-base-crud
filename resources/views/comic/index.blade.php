@@ -20,4 +20,9 @@
             </div>
         @endforeach
     </div>
+    <div class="text-center mb-3 ">
+        <a class="bg-secondary rounded-3 p-2 text-white text-decoration-none" href="{{ route('comic.create') }}"> Aggiungi
+            fumetto</a>
+
+    </div>
 @endsection()
