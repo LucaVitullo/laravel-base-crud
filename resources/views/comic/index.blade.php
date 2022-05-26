@@ -25,4 +25,5 @@
             fumetto</a>
 
     </div>
+    <a href="{{ route('comic.edit') }}"> Modifica</a>
 @endsection()

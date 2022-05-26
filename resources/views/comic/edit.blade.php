@@ -1,37 +1,40 @@
 @extends('/app')
 
 
-<form action="{{ route('comic.store') }}" method="POST">
+<form action="{{ route('comic.update', $comic->id) }}" method="POST">
     @csrf
+
+    @method('PUT')
     <div class="content d-flex justify-content-center">
         <div class="m-3">
             <label for="title">Title:</label>
-            <input type="text" name="title" />
+            <input type="text" name="title" value="{{ $comic->title }}" />
+
         </div>
         <div class="m-3">
             <label for="description">Description:</label>
-            <input type="description" name="description" />
+            <input type="description" name="description" value="{{ $comic->description }}" />
         </div>
 
         <div class="m-3">
             <label for="thumb">Thumb:</label>
-            <input type="image" name="image" />
+            <input type="text" name="thumb" value="{{ $comic->thumb }}" />
         </div>
         <div class="m-3">
             <label for="price">price:</label>
-            <input type="text" name="price" />
+            <input type="text" name="price" value="{{ $comic->price }}" />
         </div>
         <div class="m-3">
             <label for="series">series:</label>
-            <input type="text" name="series" />
+            <input type="text" name="series" value="{{ $comic->series }}" />
         </div>
         <div class="m-3">
             <label for="sale_date">sale_date:</label>
-            <input type="text" name="sale_date" />
+            <input type="text" name="sale_date" value="{{ $comic->sale_date }}" />
         </div>
         <div class="m-3">
             <label for="type">type:</label>
-            <input type="text" name="type" />
+            <input type="text" name="type" value="{{ $comic->type }}" />
         </div>
     </div>
 
