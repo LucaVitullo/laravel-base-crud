@@ -15,3 +15,13 @@
     <a class=" bg-primary p-2 text-white text-decoration-none rounded-2" href="{{ route('comic.index') }}">BACK</a>
 
 </div>
+<form action="{{ route('comic.destroy', $comic->id) }}" method="POST">
+    @csrf
+
+    sicuro?
+
+
+    @method('DELETE')
+
+    <input type="submit" value="Cancella">
+</form>
