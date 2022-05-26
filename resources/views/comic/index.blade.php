@@ -14,16 +14,21 @@
                 <p>{{ $comic->sale_date }}</p>
                 <h3>Genere: </h3>
                 <p>{{ $comic->type }}</p>
-                <a href="{{ route('comic.show', $comic->id) }}">
-                    MOSTRA DESCRIZIONE:
-                </a>
+                <div class="text-center mb-2">
+                    <a class="text-dark rounded-2 mb-3" href="{{ route('comic.show', $comic->id) }}">
+                        MOSTRA DESCRIZIONE
+                    </a>
+                </div>
+                <div class="text-center">
+
+                    <a class="text-dark rounded-2 p-1 " href="{{ route('comic.edit', $comic->id) }}"> Modifica</a>
+                </div>
+
             </div>
         @endforeach
     </div>
     <div class="text-center mb-3 ">
         <a class="bg-secondary rounded-3 p-2 text-white text-decoration-none" href="{{ route('comic.create') }}"> Aggiungi
             fumetto</a>
-
     </div>
-    <a href="{{ route('comic.edit') }}"> Modifica</a>
 @endsection()

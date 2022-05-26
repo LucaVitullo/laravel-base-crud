@@ -15,7 +15,7 @@
 
         <div class="m-3">
             <label for="thumb">Thumb:</label>
-            <input type="image" name="image" />
+            <input type="text" name="thumb" />
         </div>
         <div class="m-3">
             <label for="price">price:</label>
